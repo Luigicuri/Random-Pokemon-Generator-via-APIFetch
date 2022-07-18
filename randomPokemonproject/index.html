@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='fetch.js'></script>
+</head>
+
+<body onload="fetchPokemon()">
+    <main>
+        <div class="container">
+            <div class="subcontainer">
+                <div class="screenPokemon">
+                    <div class="pokemonSprite">
+                        <img id="pokemonSprite" class="pokeimg" src="">
+                    </div>
+                </div>
+                <div class="buttondiv">
+                    <button class="buttonRandom" onclick="fetchPokemon()">Generate Random Pokémon</button>
+                </div>
+            </div>
+
+            <div class="pokemonInfo">
+                <h4>Name</h4>
+                <p id="pokemonName" class="pokemonName">...</p>
+                <h4>ID</h4>
+                <p id="pokemonNumber" class="pokemonNumber">...</p>
+                <h4>Type</h4>
+                <div class="types">
+                    <p id="pokemonType1" class="pokemonType1">...</p>
+                    <p id="pokemonType2" class="pokemonType2">...</p>
+                </div>
+                <h4>Abilities</h4>
+                <div class="abilities">
+                    <p id="pokemonAbility1" class="pokemonAbility1">...</p>
+                    <p id="pokemonAbility2" class="pokemonAbility2">...</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
